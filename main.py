@@ -14,17 +14,18 @@ client = discord.Client()
 sad_words = ["sad", "depressed", "unhappy", "angry", "miserable"]
 
 starter_encouragements = [
-  "Just cool yourself fam",
-  "Nuh watch nuh face",
-  "Mhm ah it man",
-  "rrrrrr",
-  "Dw, you're not here for a long time just a good time"
+  "Don't give up you got this",
+  "Keep pushing!",
+  "Feel better soon!",
+  "You're a beast!",
+  "You got this champ"
 ]
 
 depressed_quotes = [
-  "Life sucks", 
+  "The glaciers are melting!", 
   "We're all gonna die",
-  "Taxes and death are what's sure in this life"
+  "Taxes and death are what's sure in this life",
+  "You lose some and you lose some more :|"
 
 ]
 
@@ -93,7 +94,7 @@ async def on_message(message):
   if msg.startswith("!new"):
       encouraging_message = msg.split("!new ", 1)[1]
       update_encouragements(encouraging_message)
-      await message.channel.send("New  encouraging message added.")
+      await message.channel.send("New encouraging message added.")
 
   if msg.startswith("!del"):
     encouragements = []
