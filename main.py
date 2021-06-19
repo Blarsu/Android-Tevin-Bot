@@ -29,15 +29,7 @@ depressed_quotes = [
   "You lose some and you lose some more :|",
   "Y'all smoke to enjoy it. I smoke to die.",
   "I used to sell furniture for a living, the trouble was, it was my own",
-  "There’s nothing wrong with you that an expensive operation can’t prolong.",
-  "There is no sunrise so beautiful that it is worth waking me up to see it.",
-  "I’m not insane. My mother had me tested.",
-  "I’m at a place in my life when errands are starting to count as going out.",
-  "To call you stupid would be an insult to stupid people!",
-  "Accept who you are. Unless you’re a serial killer.",
-  "I prefer not to think before speaking. I like being as surprised as everyone else by what comes out of my mouth.",
-  "Woke up today. It was terrible."
-
+  "There’s nothing wrong with you that an expensive operation can’t prolong."
 ]
 
 
@@ -109,10 +101,7 @@ async def on_message(message):
       update_encouragements(encouraging_message)
       await message.channel.send("New encouraging message added.")
 
-  #if msg.startswith("!newDep"):
-      #depressing_message = msg.split("!newDep ", 1)[1]
-      #update_depressing(depressing_message)
-      #await message.channel.send("New depressing message added.")
+ 
 
   if msg.startswith("!del"):
     encouragements = []
@@ -122,13 +111,7 @@ async def on_message(message):
       encouragements = db["encouragements"]
     await message.channel.send(encouragements)
 
-  #if msg.startswith("!delDep"):
-    #depressing = []
-    #if "depressing" in db.keys():
-      #index = int(msg.split("!delDep", 1)[1])
-      #delete_encouragement(index)
-      #depressing = db["depressing"]
-    #await message.channel.send(encouragements)
+ 
 
 
   if msg.startswith("!list"):
@@ -141,12 +124,6 @@ async def on_message(message):
      depressing = db["depressing"]
      await message.channel.send(depressing)
     
-
-  #if msg.startswith("!listDep"):
-   # depressing = []
-    #if "depressing" in db.keys():
-     #depressing = db["depressing"]
-    #await message.channel.send(depressing)
 
   if msg.startswith("!responding"):
    value = msg.split("!responding ",1)[1]
