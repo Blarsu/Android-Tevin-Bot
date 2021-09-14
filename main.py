@@ -23,13 +23,7 @@ starter_encouragements = [
 ]
 
 depressed_quotes = [
-  "Corona Virus", 
-  "We're all gonna die",
-  "Taxes and death are what's sure in this life",
-  "You lose some and you lose some more :|",
-  "Y'all smoke to enjoy it. I smoke to die.",
-  "I used to sell furniture for a living, the trouble was, it was my own",
-  "There’s nothing wrong with you that an expensive operation can’t prolong."
+  "This bot only does positive quotes"
 ]
 
 
@@ -86,9 +80,9 @@ async def on_message(message):
 
 
   if db["responding"]:
-    options = starter_encouragements
-    if "encouragements" in db.keys():
-     options.extend(db["encouragements"][:])
+   options = starter_encouragements
+   if "encouragements" in db.keys():
+    options.extend(db["encouragements"][:])
     
        
      
