@@ -1,6 +1,6 @@
 # Android-Tevin-Bot
 
-Discord Bot that motivates you with inspirational quotes and allows users to add their own quotes for the bot to use. Changees.
+Discord Bot that motivates you with inspirational quotes and allows users to add their own quotes for the bot to use. Ok lets try this again.
 
 Developed using Python on Replit and hosted using uptimerobot.
 
